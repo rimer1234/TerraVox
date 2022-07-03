@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title> Terra Vox</title>
+    
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css"/>
+    <script src="https://js.arcgis.com/4.16/"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+      <h1>Terra Vox - Voice Of The World</h1> 
+      <h5>Click on the countries on the map and press the blue button to hear their united voice.Press the red button to stop and clear selections.</h5>
+    <div id="viewDiv" style="height:60%; width:60%; margin:auto;"></div>
+    <div class="set">
+        <button class="w drum" id = "c1"></button>
+        <button class="a drum" id = "c2"></button>
+        <button class="s drum" id = "c3"></button>
+        <button class="d drum" id = "c4"></button>
+        <button class="j drum" id = "c5"></button>
+        <button class="k drum" id = "go" onclick=play()></button>
+          <button class="k drum" id = "clear" onclick=clearall()></button>
+      </div>
+      <div class="wrapper">
+        <div id="light"></div>
+        <div id="light"></div>
+        <div id="light"></div>
+        <div id="light"></div>
+        <div id="light"></div>
+      </div>
+  </body>
+</html>

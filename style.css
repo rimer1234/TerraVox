@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+html,
+body,
+#viewDiv{
+height:100%;
+width:100%;
+}
+
+body{
+    background-color: rgb(26, 169, 247);
+}
+body.animate,
+#viewDiv.animate,
+html.animate
+{
+    animation: moves 5s infinite;
+}
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+
+  #light {
+    width:200px;
+    height:100px;
+    border-radius:50%;
+    background:conic-gradient(from -45deg  at bottom,#0000, rgb(246, 247, 244) 1deg 90deg, #0000 91deg);
+    -webkit-mask:linear-gradient(#0000,#000);
+    animation: blinker 1s linear infinite;
+  }
+  
+
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+
+  @keyframes moves{
+    0%   { background: #ececc1; } 
+    20%  { background: #ece6d0; }
+    40%  { background: #b7ddc6; }
+    60%  { background: #b2cece; }
+    80%  { background: #dedbf0; }
+    100% { background: #ecd3d5; }
+  }
+
+  h1 {
+    color: rgb(5, 5, 173);
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    font-size:40px;
+    padding-top: 1px;
+    margin:0;
+  }
+
+  h5 {
+     color: rgb(5, 5, 173);
+    text-align: center;
+    font-family:  cursive;
+    padding:1px;
+  }
+
+ .set {
+     margin-left: 23%;
+    margin-top:1%;
+}
+
+#go, #clear, #clear
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border:none;
+}
+
+#go
+{
+background-image: url('flags/play.png');
+
+}
+
+#clear
+{
+background-image: url('flags/clear.png');
+background-color: rgb(107, 1, 1);
+}
+
+
+  .drum {
+    outline: none;
+    border: 2px solid #1d1686;
+    font-size: 5rem;
+    font-family: 'Arvo', cursive;
+    line-height: 6;
+    font-weight: 900;
+    color: #ffffff; 
+    text-shadow: 3px 0 #000000;
+    border-radius: 15px;
+    display: inline-block;
+    width: 160px;
+    height: 80px;
+    text-align: center;
+    margin: 5px;
+    background-color: white;
+    background-repeat: round;
+  }
